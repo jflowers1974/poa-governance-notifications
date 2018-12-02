@@ -145,7 +145,7 @@ running:
             --log-file         logs are written to files in the ./logs directory, log files are rotated when they reach a size of 4MB
 
     OPTIONS:
-            --block-time <value>    the average number of seconds it takes to mine a new block
+            --block-time <value>    will set how often poagov will query the blockchain for new governance events. Defaults to 30 seconds.
         -n, --limit <value>         shutdown `poagov` after this many notifications have been generated, useful when testing
             --start <value>         start monitoring for governance events at this block (inclusive)
             --tail <value>          start monitoring for governance events for the `n` blocks prior to the last block mined
